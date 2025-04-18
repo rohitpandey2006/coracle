@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Tech Company</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header (can be reused) -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Company Logo" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#" class="active">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+
+      <!-- Filter Tabs -->
+      <div class="services-tabs">
+        <button class="tab-btn active" data-category="all">All</button>
+        <button class="tab-btn" data-category="web">Web Development</button>
+        <button class="tab-btn" data-category="app">App Development</button>
+        <button class="tab-btn" data-category="design">UI/UX Design</button>
+      </div>
+
+      <!-- Services Cards -->
+      <div class="services-grid">
+        <!-- Service Item -->
+        <div class="service-card" data-category="web">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Modern websites that are fast, responsive and scalable.</p>
+          <button class="btn-modal" data-modal="modal1">Learn More</button>
+        </div>
+
+        <div class="service-card" data-category="app">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>App Development</h3>
+          <p>Native and hybrid mobile apps tailored for performance.</p>
+          <button class="btn-modal" data-modal="modal2">Learn More</button>
+        </div>
+
+        <div class="service-card" data-category="design">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Engaging interfaces that boost user experience and conversion.</p>
+          <button class="btn-modal" data-modal="modal3">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Popups -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Web Development</h3>
+      <p>We use HTML, CSS, JavaScript, React, and modern frameworks to build professional websites that convert and engage.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>App Development</h3>
+      <p>From Android to iOS, we build scalable, feature-rich applications using Flutter, React Native, and more.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>UI/UX Design</h3>
+      <p>We design clean, creative and conversion-focused interfaces using Figma, Adobe XD and more.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 Tech Company | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

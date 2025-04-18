@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coracle Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/coracle-logo.svg" alt="Coracle Logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Featured Post -->
+  <section class="blog-hero">
+    <div class="container">
+      <h1>Coracle Insights</h1>
+      <p>Your source for cutting‑edge tech news, tutorials, and deep dives.</p>
+      <div class="featured-post">
+        <img src="images/featured-post.jpg" alt="Featured Post Image">
+        <div class="featured-text">
+          <span class="tag">Tutorial</span>
+          <h2>Building Scalable Web APIs with Node.js</h2>
+          <p>Learn how to architect RESTful services that handle thousands of requests per second.</p>
+          <a href="#" class="btn-secondary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container blog-content">
+    <div class="posts-list">
+      <!-- Repeat this post-card block for each article -->
+      <article class="post-card">
+        <img src="images/post1.jpg" alt="Post Title">
+        <div class="post-info">
+          <span class="post-date">April 18, 2025</span>
+          <h3><a href="#">Understanding CSS Grid Layout</a></h3>
+          <p>Explore CSS Grid basics and advanced techniques to create powerful, responsive designs.</p>
+          <a href="#" class="read-more">Continue Reading →</a>
+        </div>
+      </article>
+      <!-- /post-card -->
+      <!-- ... more post cards ... -->
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Search -->
+      <div class="widget">
+        <h4>Search</h4>
+        <form>
+          <input type="text" placeholder="Search posts..." />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <!-- Categories -->
+      <div class="widget">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Tutorials (12)</a></li>
+          <li><a href="#">News (8)</a></li>
+          <li><a href="#">Reviews (5)</a></li>
+          <li><a href="#">Opinion (4)</a></li>
+        </ul>
+      </div>
+      <!-- Recent Posts -->
+      <div class="widget">
+        <h4>Recent Posts</h4>
+        <ul>
+          <li><a href="#">Getting Started with React Hooks</a></li>
+          <li><a href="#">10 VS Code Extensions for Developers</a></li>
+          <li><a href="#">Deploying Apps to AWS in 2025</a></li>
+        </ul>
+      </div>
+      <!-- Newsletter -->
+      <div class="widget">
+        <h4>Subscribe</h4>
+        <form>
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Pagination -->
+  <nav class="pagination">
+    <a href="#" class="prev">← Newer Posts</a>
+    <a href="#" class="next">Older Posts →</a>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 Coracle. All rights reserved.</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
