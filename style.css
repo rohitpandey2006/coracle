@@ -21,16 +21,16 @@ Reset CSS
   
  
   /* Header Section Styles */
+/* Base styles */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: linear-gradient(to right,  #111439, #f8f8f9); /* changed from .... */
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px 0;
-}
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, #111439, #f8f8f9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px 0;
+  }
   
   .nav-container {
     display: flex;
@@ -39,6 +39,7 @@ Reset CSS
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
   }
   
   .logo img {
@@ -50,6 +51,9 @@ Reset CSS
     list-style: none;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap; /* Allows wrapping of nav items */
+    padding: 0;
+    margin: 0;
   }
   
   .nav ul li a {
@@ -93,6 +97,7 @@ Reset CSS
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(33, 150, 243, 0.2);
     font-family: 'Poppins', sans-serif;
+    margin-top: 10px; /* Adds spacing when stacked */
   }
   
   .btn-quote:hover {
@@ -105,20 +110,26 @@ Reset CSS
   @media (max-width: 768px) {
     .nav-container {
       flex-direction: column;
-      gap: 20px;
+      align-items: center;
+      padding: 0 20px;
     }
   
     .nav ul {
       flex-direction: column;
+      align-items: center;
       gap: 15px;
-      text-align: center;
+      width: 100%;
+    }
+  
+    .nav ul li a {
+      font-size: 1.2rem;
     }
   
     .btn-quote {
-      padding: 10px 20px;
+      width: 100%;
+      text-align: center;
     }
   }
-  
   
   
   /* Hero Section Styles */
